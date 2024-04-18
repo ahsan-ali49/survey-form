@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Git</title>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
-    
+    <div class="body-content">
+    <h1 id='title'>freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label id="name-label">Name <input type="text" id="name" id="name-label" placeholder="Enter your name" required/></label>
+        <label  id="email-label">Email <input type="email" id="email" id="email-label" placeholder="Enter your Email"/ required></label>
+        <label  id="number-label">Age(optional)<input type="number" id="number" min="3" max="11"  id="number-label" placeholder="Age"/>
+        <select id="dropdown">
+            <option>Select current role</option>
+            <option>Student</option>
+        </select>
+        <input type="radio" name="radios" value="value"/>
+        <input type="radio" name="radios" value="value"/>
+        <input type="checkbox" value="course"/>
+        <input type="checkbox" value="course"/>
+        <textarea></textarea>
+        <button type="submit" id="submit">Submit</button>
+    </form>    
+    </div>
 </body>
 </html>
